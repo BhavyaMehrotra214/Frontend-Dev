@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Student Information
+            </legend>
+        </fieldset>
+        <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">--Choose a Course--</option>
+        <option value="html">HTML Basics</option>
+        <option value="css">CSS Fundamentals</option>
+        <option value="js">JavaScript Essentials</option>
+        <option value="react">React for Beginners</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Available Course Schedules</legend>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Instructor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>Mr. John </td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Ms. Johnson</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>5:00 PM - 7:00 PM</td>
+            <td>Dr. Brown</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Register">
+  </form>
+    </form>
+</body>
+</html>
