@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive YouTube (percent-based)</title>
+  <style>
+    /* make the page fill the viewport and remove default margins */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    /* center the video container and control its size using percentages only */
+    .video-wrapper {
+      width: 80%;            /* <-- container width as percentage */
+      margin: 3% auto;       /* <-- vertical/horizontal spacing as percentage */
+      position: relative;    /* needed for absolute-positioned iframe inside */
+      padding-bottom: 56.25%;/* <-- sets 16:9 aspect ratio: 9/16 = 56.25% (percentage) */
+      height: 0;             /* height is driven by padding-bottom (percent of width) */
+      box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+
+    /* iframe fills the wrapper — width & height are percentages */
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;  /* <-- percentage */
+      height: 100%; /* <-- percentage */
+      border: 0;
+    }
+
+    /* small responsive tweak: on very narrow viewports make the wrapper wider (percent based) */
+    @media (max-width: 600px) {
+      .video-wrapper {
+        width: 94%;
+        margin: 3% auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center; margin-top:2%;">Responsive YouTube embed (percent-based)</h2>
+
+  <div class="video-wrapper">
+    <!-- Replace the embed ID below with any YouTube video ID -->
+    <iframe
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
