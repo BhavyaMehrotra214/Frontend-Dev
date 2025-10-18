@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+.pricing-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.plan {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  background-color: #eaf6ff;
+  border-color: #007bff;
+}
+
+.plan h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.plan ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.btn {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.popular {
+  border: 3px solid #28a745;
+  background: #f0fff4;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.2);
+}
+.popular h2 {
+  color: #28a745;
+}
