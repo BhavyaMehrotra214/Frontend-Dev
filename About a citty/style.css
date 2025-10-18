@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+header {
+  background-color: #2a2a72;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 4rem 10%;
+  border-bottom: 3px solid rgba(255,255,255,0.2);
+}
+
+.content {
+  max-width: 800px;
+  background: rgba(0,0,0,0.4);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.intro-section {
+  background: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1500&q=80')
+              center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.landmarks-section {
+  background: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1500&q=80')
+              center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.culture-section {
+  background: linear-gradient(to right, #ff8c00, #ff0080);
+}
+
+
+.food-section {
+  background: radial-gradient(circle at center, #2a2a72, #009ffd);
+  background-attachment: fixed;
+}
+
+.contact-section {
+  background-color: #1e1e1e;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer {
+  background-color: #2a2a72;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
