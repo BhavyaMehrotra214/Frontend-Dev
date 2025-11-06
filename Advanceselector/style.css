@@ -1,0 +1,59 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f7fa;
+  color: #333;
+}
+
+header, footer {
+  background-color: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+main {
+  padding: 30px;
+}
+
+h2 {
+  color: #0984e3;
+}
+
+input[type="text"] {
+  border: 2px solid #0984e3;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+a[href^="https"] {
+  color: #00b894;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a[href^="https"]:hover {
+  text-decoration: underline;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+}
+
+
+.pseudo-list li:nth-child(odd) {
+  background-color: #dfe6e9;
+}
+.pseudo-list li:nth-child(even) {
+  background-color: #b2bec3;
+}
+
+
+.pseudo-list li:hover {
+  background-color: #74b9ff;
+  color: white;
+  transition: 0.3s;
+}
