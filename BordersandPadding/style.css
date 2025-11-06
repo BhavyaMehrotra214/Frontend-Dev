@@ -1,0 +1,67 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Flexbox container */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Common box style */
+.box {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.4s ease;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Border styles */
+.solid {
+  border: 4px solid #3498db;
+}
+.dashed {
+  border: 4px dashed #e67e22;
+}
+.double {
+  border: 6px double #2ecc71;
+}
+.groove {
+  border: 6px groove #9b59b6;
+}
+
+.rounded {
+  border: 4px solid #555;
+  border-radius: 15px;
+}
+
+.small-padding {
+  padding: 5px;
+}
+.medium-padding {
+  padding: 20px;
+}
+.large-padding {
+  padding: 35px;
+}
+
+.box:hover {
+  border-color: #ff4757;
+}
