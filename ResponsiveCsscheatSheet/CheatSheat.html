@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="CheatSheat.css">
+</head>
+<body>
+  <h1 class="title">Responsive CSS Cheat Sheet</h1>
+
+  <div class="cheatsheet-grid">
+    <div class="cheat-box">
+      <h2>Filters</h2>
+      <p>
+        CSS filters modify image appearance — e.g., 
+        <code>filter: grayscale(100%);</code>, <code>blur(5px);</code>, or 
+        <code>hue-rotate(90deg);</code>.
+      </p>
+    </div>
+
+    <div class="cheat-box">
+      <h2>Media Queries</h2>
+      <p>
+        Use media queries to adapt layouts.  
+        Example: <code>@media (max-width: 600px) { ... }</code> changes styles for small screens.
+      </p>
+    </div>
+
+    <div class="cheat-box">
+      <h2>Responsive Design</h2>
+      <p>
+        Create layouts that adapt to screen size using units like 
+        <code>%, vw, vh</code> and flexible tools like 
+        <code>flexbox</code> or <code>grid</code>.
+      </p>
+    </div>
+
+    <div class="cheat-box">
+      <h2>Typography</h2>
+      <p>
+        Use relative units and <code>clamp()</code> for scalable text.  
+        Example: <code>font-size: clamp(1rem, 2vw, 2rem);</code>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
