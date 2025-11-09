@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+}
+
+.comparison-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #0077cc;
+  margin-bottom: 30px;
+}
+
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Image Boxes */
+.image-box {
+  max-width: 600px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 12px;
+  transition: filter 0.6s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.filtered img {
+  filter: brightness(0.6) contrast(1.3);
+}
+
+.filtered:hover img {
+  filter: none;
+}
+.caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .comparison-container {
+    flex-direction: column;
+  }
+
+  .image-box {
+    max-width: 90%;
+  }
+
+  .caption {
+    font-size: 0.95rem;
+  }
+}
