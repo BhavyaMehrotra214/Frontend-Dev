@@ -1,0 +1,16 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  min-height: 80vh;              
+  padding: 100px 20px;           
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #333;
+}
