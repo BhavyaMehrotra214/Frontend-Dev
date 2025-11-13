@@ -1,0 +1,13 @@
+.shadow-sm {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-sm:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
